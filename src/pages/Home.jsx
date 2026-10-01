@@ -3,12 +3,17 @@ import jogo01 from "../assets/jogo01.jpg"
 const Home = () => {
   
   const games = [
-    {id:1,titulo:"Jogo-01",preco:"R$ 40,00", imagem:jogo01},
+    {id:1,titulo:"Jogo-01",preco:"R$ 40,00",  imagem:jogo01},
     {id:2,titulo:"Jogo-02",preco:"R$ 250,00", imagem:jogo01},
     {id:3,titulo:"Jogo-03",preco:"R$ 400,00", imagem:jogo01},
+    {id:4,titulo:"Jogo-04",preco:"R$ 410,00", imagem:jogo01},
+    {id:5,titulo:"Jogo-05",preco:"R$ 250,00", imagem:jogo01},
+    {id:6,titulo:"Jogo-06",preco:"R$ 300,00", imagem:jogo01},
+    {id:7,titulo:"Jogo-07",preco:"R$ 101,00", imagem:jogo01},
+    {id:8,titulo:"Jogo-08",preco:"R$ 402,00", imagem:jogo01},
   ];
   return (
-    <main className="px-[5%] mt-10 mb-16 flex-grow ">
+    <main className="px-[5%] mt-10 mb-16 grow ">
       <h2 className="titulo text-3xl">Produtos em Destaques</h2>
       <section className="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-6">
         {games.map((game)=>(
